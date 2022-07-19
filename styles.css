@@ -66,8 +66,9 @@ img{
     grid-template-columns:1fr 1fr .8fr;
     grid-template-rows: repeat(3, 1fr);
     gap: 15px;
-    margin: 15px;
+    margin: 10px;
     text-align: center;
+    background-color: rgba(226,232,240,255);
 }
 #btn{
    
@@ -125,4 +126,15 @@ div{
 }
 .helpflex{
     height:20%
+}
+input[type="text"]{
+    width: 80%;
+    border-radius: 10px;
+    margin-left: 5px;
+    margin-top: 5px;
+    background-color: lightgrey;
+}
+.searchbar>img{
+    margin-left: 35px;
+    margin-top: 10px;
 }
