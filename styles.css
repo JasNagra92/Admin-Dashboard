@@ -68,6 +68,7 @@ img{
     gap: 15px;
     text-align: center;
     background-color: rgba(226,232,240,255);
+    padding:1rem
 }
 #btn{
    
