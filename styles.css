@@ -7,6 +7,26 @@ body{
     align-items: center;
     height: 100vh; 
 }
+ul>li{
+    list-style: none;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    color:white;
+}
+ul{
+    padding-left:20px
+}
+.homeflex>ul>li{
+    margin-bottom: 10px;
+}
+.dashflex>ul>li{
+    font-size: 1.4rem;
+}
+img{
+    height:15px;
+    width:auto;
+    
+}
 .main{
     display:grid;
     flex:1;
@@ -22,6 +42,11 @@ body{
     grid-row-end: 3;
     grid-column-start: 1;
     grid-column-end: 2;
+    background-color: rgba(25,146,212,255);
+    margin:0px;
+    flex:1;
+    gap: 15px
+
 }
 .header{
     display: grid;
@@ -92,16 +117,11 @@ div{
 .buttons{
     grid-area: 2/2/3/3;
 }
-.sidebar{
-    flex:1;
-    margin: 5px;
-    gap: 15px
-}
 .dashflex{
-    height:10%
+    height:15%
 }
 .homeflex{
-    height:30%
+    height:40%
 }
 .helpflex{
     height:20%
