@@ -15,6 +15,7 @@ ul>li{
     margin-bottom: 5px;
     color:white;
     font-size: 2vh;
+    flex:1
 }
 a{
     color: white;
@@ -24,7 +25,9 @@ a:hover{
     font-size: larger;
 }
 ul{
-    padding-left:20px
+    padding-left:20px;
+    display: flex;
+    flex-direction: column;
 }
 .homeflex>ul>li{
     margin-bottom: 10px;
@@ -99,32 +102,56 @@ div{
     border: 1px solid black;
 }
 .searchbar{
-    grid-area: 1/1/3/2;
+    grid-area: 1/1/2/2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .iconName{
     grid-area: 1/2/2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px
 }
 .nameheader{
     grid-area: 2/1/3/2;
+    display: flex;
+    align-items: center;
 }
 .buttons{
     grid-area: 2/2/3/3;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+button{
+    width:25%;
+    border-radius: 25px;
+    background-color: rgba(25,146,212,255);
+    color: white;
+    height: 40%;
+    font-weight: bold;
+    font-size: larger;
 }
 .dashflex{
     height:10%
 }
 .homeflex{
-    height:40%
+    height:40%;
+    display: flex;
 }
 .helpflex{
     height:20%
 }
 input[type="text"]{
     width: 80%;
+    height:25%;
     border-radius: 10px;
     margin-left: 5px;
     margin-top: 5px;
-    background-color: lightgrey;
+    background-color: rgba(209, 206, 206, 0.77);
 }
 .searchbar>img{
     margin-left: 35px;
@@ -132,5 +159,17 @@ input[type="text"]{
 }
 img:hover{
     height:4vh;
-    width:auto
+    width:auto;
+}
+.nameheader>img{
+    height:5vh;
+    width: auto;
+    padding-left: 40px;
+}
+.nameheader>p{
+    font-size: 35px;
+    font-weight: bolder;
+}
+span{
+    font-size: large;
 }
