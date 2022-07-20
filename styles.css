@@ -13,6 +13,13 @@ ul>li{
     margin-bottom: 5px;
     color:white;
 }
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    font-size: larger;
+}
 ul{
     padding-left:20px
 }
