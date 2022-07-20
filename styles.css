@@ -38,7 +38,7 @@ ul{
 img{
     height:3vh;
     width:auto;
-    
+    margin-right: 20px;
 }
 .main{
     display:grid;
@@ -82,7 +82,8 @@ img{
     gap: 15px;
     text-align: center;
     background-color: rgba(226,232,240,255);
-    padding:1rem
+    padding:1rem;
+    box-shadow: inset 0px 5px 8px 0px black;
 }
 #btn{
    
@@ -136,7 +137,9 @@ button{
     font-size: larger;
 }
 .dashflex{
-    height:10%
+    height:10%;
+    display: flex;
+    align-items: center;
 }
 .homeflex{
     height:40%;
@@ -151,7 +154,7 @@ input[type="text"]{
     border-radius: 10px;
     margin-left: 5px;
     margin-top: 5px;
-    background-color: rgba(209, 206, 206, 0.77);
+    background-color: rgb(226,232,240);
 }
 .searchbar>img{
     margin-left: 35px;
