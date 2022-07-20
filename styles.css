@@ -6,12 +6,15 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh; 
+    margin: top 0;
+    background-color: black;
 }
 ul>li{
     list-style: none;
     padding-bottom: 5px;
     margin-bottom: 5px;
     color:white;
+    font-size: 2vh;
 }
 a{
     color: white;
@@ -27,18 +30,18 @@ ul{
     margin-bottom: 10px;
 }
 .dashflex>ul>li{
-    font-size: 1.4rem;
+    font-size: 3vh;
 }
 img{
-    height:15px;
+    height:3vh;
     width:auto;
     
 }
 .main{
     display:grid;
     flex:1;
-    height: 90vh;
-    max-width: 80vw;
+    height: 100vh;
+    max-width: 1887px;
     grid-template-columns: 1fr 1.5fr 1.5fr 1fr;
     grid-template-rows: 1fr 4fr;
 }
@@ -63,6 +66,7 @@ img{
     grid-column-end: 5;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
+    background-color: white;
 }
 .content{
     display: grid;
@@ -107,7 +111,7 @@ div{
     grid-area: 2/2/3/3;
 }
 .dashflex{
-    height:15%
+    height:10%
 }
 .homeflex{
     height:40%
@@ -125,4 +129,8 @@ input[type="text"]{
 .searchbar>img{
     margin-left: 35px;
     margin-top: 10px;
+}
+img:hover{
+    height:4vh;
+    width:auto
 }
