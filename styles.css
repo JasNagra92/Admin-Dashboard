@@ -21,9 +21,6 @@ a{
     color: white;
     text-decoration: none;
 }
-a:hover{
-    font-size: larger;
-}
 ul{
     padding-left:20px;
     display: flex;
@@ -46,7 +43,7 @@ img{
     height: 100vh;
     max-width: 1887px;
     grid-template-columns: 1fr 1.5fr 1.5fr 1fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: minmax(150px, 200px);
 }
 .sidebar{
     display: flex;
@@ -68,7 +65,7 @@ img{
     grid-column-start: 2;
     grid-column-end: 5;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 10vh 10vh;
     background-color: white;
 }
 .content{
@@ -78,11 +75,11 @@ img{
     grid-column-start: 2;
     grid-column-end: 5;
     grid-template-columns:1fr 1fr .8fr;
-    grid-template-rows:.1fr repeat(3, 1fr);
+    grid-template-rows:50px repeat(3, 1fr);
     gap: 15px;
     text-align: center;
     background-color: rgba(226,232,240,255);
-    padding:1rem;
+    padding-left: 1rem;
     box-shadow: inset 0px 5px 8px 0px black;
 }
 .minititle{
@@ -163,9 +160,21 @@ input[type="text"]{
     margin-left: 35px;
     margin-top: 10px;
 }
-img:hover{
-    height:4vh;
-    width:auto;
+li img,
+.prjicons img{
+    transition: transform 250ms ease-out
+}
+li img:hover,
+.prjicons img:hover{
+    transform: scale(1.5);
+    transform-origin: center;
+}
+a{
+    color: #fdfeff;
+    transition: color 250ms ease-in-out, box-shadow .3s ease-in-out;
+}
+a:hover{
+    box-shadow: inset 200px 0 0 0 #54b3d6;
 }
 .nameheader>img{
     height:5vh;
@@ -178,4 +187,19 @@ img:hover{
 }
 span{
     font-size: large;
+}
+.prjgrid{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:4fr 1fr;
+}
+.prjicons{
+    text-align: right;
+}
+.prj{
+    align-self: center;
+    justify-self: center;
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
 }
