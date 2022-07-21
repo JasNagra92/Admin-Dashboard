@@ -226,6 +226,8 @@ span {
   grid-template-columns: 1fr;
   grid-template-rows: 4fr 1fr;
   border: 1px solid black;
+  border-radius: 10px;
+  transition: transform 250ms ease-in;
 }
 
 .prjicons {
@@ -238,11 +240,10 @@ span {
   width: 80%;
   height: 80%;
   border-radius: 10px;
-  transition: transform 250ms ease-in;
   text-align: left;
 }
 
-.prj:hover {
-  transform: scale(1.4);
+.prjgrid:hover {
+  transform: scale(1.2);
   transform-origin: center;
 }
